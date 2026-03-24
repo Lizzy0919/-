@@ -3,6 +3,10 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig, loadEnv} from 'vite';
 
+export default defineConfig({
+  base: '/-/', // 注意前后都有斜杠
+  // ...其他配置
+})
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
