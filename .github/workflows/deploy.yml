@@ -32,7 +32,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci # 使用 ci 确保依赖版本锁定，比 npm install 更严谨
+        run: npm install
 
       - name: Build
         run: npm run build # 执行打包命令
